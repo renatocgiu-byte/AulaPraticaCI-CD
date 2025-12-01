@@ -1,8 +1,8 @@
-name: CI/CD - Teste e Deploy
+name: Deploy Automático
 
 on:
   push:
-    branches: [ "main" ]   # Dispara o workflow apenas em pushs para a branch main
+    branches: [ "main" ]
 
 jobs:
   # Etapa de Testes
@@ -40,4 +40,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./   # Diretório raiz do seu site
+          publish_dir: ./  
