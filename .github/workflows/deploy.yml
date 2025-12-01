@@ -37,7 +37,7 @@ jobs:
           echo "Nenhuma dependência necessária para HTML puro"
 
       - name: Publicar no GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@4ff8cc66d2f33f81e33c70f3f2081d0537042f4c
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./  
